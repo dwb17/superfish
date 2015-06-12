@@ -154,7 +154,7 @@
 					}
 					o.retainPath = false;
 					o.onBeforeHide.call($ul);
-					$ul.stop(true, true).animate(o.animationOut, speed, function () {
+					$ul.animate(o.animationOut, speed, function () {
 						var $this = $(this);
 						o.onHide.call($this);
 					});
@@ -170,7 +170,7 @@
 					$ul = $this.children(o.popUpSelector);
 
 				o.onBeforeShow.call($ul);
-				$ul.stop(true, true).animate(o.animation, o.speed, function () {
+				$ul.animate(o.animation, o.speed, function () {
 					o.onShow.call($ul);
 				});
 				return this;
